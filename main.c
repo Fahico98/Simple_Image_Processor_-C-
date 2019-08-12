@@ -25,7 +25,7 @@ void resetMatrix();
 
 int main() {
     printf("\n      [WELCOME TO THE SIMPLEST IMAGE PROCESSING PROGRAM IN THE WORLD]\n");
-    printf("               *** Developed with the C programming language ***\n\n");
+    printf("             *** Developed with the C programming language ***\n\n");
     start();
     return 0;
 }
@@ -151,17 +151,17 @@ void loadInMatrix(FILE *file){
             endLine = 0;
             for (j = 0; j < columns; j++) {
                 if(endLine == 1){
-                    matrix[i][j] = '-';
+                    matrix[i][j] = ' ';
                 }else{
                     if(line[j] == 'X'){
                         matrix[i][j] = 'X';
                     }else if(line[j] == '\0' || line[j] == '\n'){
-                        matrix[i][j] = '-';
+                        matrix[i][j] = ' ';
                         endLine = 1;
                     }else{
                         // For test...
                         if(line[j] == ' '){
-                            matrix[i][j] = '-';
+                            matrix[i][j] = ' ';
                         }else{
                             matrix[i][j] = line[j];
                         }
@@ -220,7 +220,7 @@ void turnRight(){
 void deleteArea(int origin_x, int origin_y, int width, int height){
     for(int i = origin_y; i < origin_y + height; i++){
         for(int j = origin_x; j < origin_x + width; j++){
-            matrix[i][j] = '-';
+            matrix[i][j] = ' ';
         }
     }
 }
@@ -242,7 +242,7 @@ void deleteIsolatedPoints(){
                                 break;
                             }
                         }
-                        matrix[i][j] = (isolated == 1) ? '-' : 'X';
+                        matrix[i][j] = (isolated == 1) ? ' ' : 'X';
                     }else if(j == columns - 1){
                         neighbours[0] = matrix[i + 1][j];
                         neighbours[1] = matrix[i + 1][j - 1];
@@ -253,7 +253,7 @@ void deleteIsolatedPoints(){
                                 break;
                             }
                         }
-                        matrix[i][j] = (isolated == 1) ? '-' : 'X';
+                        matrix[i][j] = (isolated == 1) ? ' ' : 'X';
                     }else{
                         neighbours[0] = matrix[i][j + 1];
                         neighbours[1] = matrix[i + 1][j + 1];
@@ -266,7 +266,7 @@ void deleteIsolatedPoints(){
                                 break;
                             }
                         }
-                        matrix[i][j] = (isolated == 1) ? '-' : 'X';
+                        matrix[i][j] = (isolated == 1) ? ' ' : 'X';
                     }
                 }else if(i == rows - 1){
                     if (j == 0) {
@@ -279,7 +279,7 @@ void deleteIsolatedPoints(){
                                 break;
                             }
                         }
-                        matrix[i][j] = (isolated == 1) ? '-' : 'X';
+                        matrix[i][j] = (isolated == 1) ? ' ' : 'X';
                     }else if(j == columns - 1){
                         neighbours[0] = matrix[i][j - 1];
                         neighbours[1] = matrix[i - 1][j - 1];
@@ -290,7 +290,7 @@ void deleteIsolatedPoints(){
                                 break;
                             }
                         }
-                        matrix[i][j] = (isolated == 1) ? '-' : 'X';
+                        matrix[i][j] = (isolated == 1) ? ' ' : 'X';
                     }else{
                         neighbours[0] = matrix[i][j - 1];
                         neighbours[1] = matrix[i - 1][j - 1];
@@ -303,7 +303,7 @@ void deleteIsolatedPoints(){
                                 break;
                             }
                         }
-                        matrix[i][j] = (isolated == 1) ? '-' : 'X';
+                        matrix[i][j] = (isolated == 1) ? ' ' : 'X';
                     }
                 }else{
                     neighbours[0] = matrix[i][j + 1];
@@ -320,7 +320,7 @@ void deleteIsolatedPoints(){
                             break;
                         }
                     }
-                    matrix[i][j] = (isolated == 1) ? '-' : 'X';
+                    matrix[i][j] = (isolated == 1) ? ' ' : 'X';
                 }
             }
         }
