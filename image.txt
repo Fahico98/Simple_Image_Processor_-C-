@@ -1,0 +1,28 @@
+28 80
+
+
+
+                                 X
+                                XXX
+                               XXXXX
+                              XXXXXXX       X
+                             XXXXXXXXX
+                            XXXXXXXXXXX
+                           XXXXXXXXXXXXX
+              X           XXXXXXXXXXXXXXX
+                         XXXXXXXXXXXXXXXXX
+ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+               XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                    XXXXXXXXXXXXXXXXXXXXXXXXXXXX                               X
+                   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                 XXXXXXXXXXXXXXX    XXXXXXXXXXXXXXX
+                XXXXXXXXXXXXX          XXXXXXXXXXXXX
+               XXXXXXXXXXX                XXXXXXXXXXX
+              XXXXXXXX                        XXXXXXXX
+             XXXXX                               XXXXXX
+            XXX                                      XXX
+           X                                            X
+                                 X

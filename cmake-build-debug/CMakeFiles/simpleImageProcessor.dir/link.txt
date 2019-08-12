@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2019.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\simpleImageProcessor.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\simpleImageProcessor.dir/objects.a @CMakeFiles\simpleImageProcessor.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\simpleImageProcessor.dir/objects.a -Wl,--no-whole-archive  -o simpleImageProcessor.exe -Wl,--out-implib,libsimpleImageProcessor.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\simpleImageProcessor.dir\linklibs.rsp
